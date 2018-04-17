@@ -13,6 +13,12 @@ import { ActivatedRoute } from '@angular/router';
 export class CoursedetailComponent {
 
   course: any[] = ROUTES;
+  start: string;
+  stringSologan1: string;
+  stringSologan2: string;
+  coursess: any[];
+
+
 
   constructor() { }
 

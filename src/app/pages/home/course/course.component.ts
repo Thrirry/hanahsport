@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-course',
@@ -9,9 +10,14 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CourseComponent implements OnInit {
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) {
+
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, private location: Location) {
    }
 
+   goToCourese(){
+      this.router.navigateByUrl('/courses/all');
+      location.reload()
+   }
   ngOnInit() {
 
   }

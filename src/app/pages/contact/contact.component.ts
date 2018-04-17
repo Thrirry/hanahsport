@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {FormControl} from '@angular/forms';
 
+import { Router } from "@angular/router";
+
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +16,7 @@ export class ContactComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder) { }
+  constructor(private _formBuilder: FormBuilder, private router: Router,) { }
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
@@ -31,5 +33,10 @@ export class ContactComponent implements OnInit {
         this.email.hasError('email') ? 'Not a valid email' :
             '';
   }
+
+  goToHome(){
+      this.router.navigateByUrl('/home');
+      location.reload()
+   }
 
 }

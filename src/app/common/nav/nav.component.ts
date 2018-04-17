@@ -10,6 +10,18 @@ export class NavComponent implements OnInit {
 
   constructor() { }
 
+  goToEvent(){
+
+  }
+
+  goToContact(){
+
+  }
+
+  
+
+
+
   ngOnInit() {
      $.getScript('../../../assets/js/function-main.min.js'); //for slide left-bar
   }

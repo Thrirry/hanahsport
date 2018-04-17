@@ -19,9 +19,22 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "assets/css/main.css",
+        "assets/css/slide-main.css",
+        "assets/css/tooltips.css",
+        "assets/css/gmap-style.css",
+        "assets/css/cookiecuttr.css",
+
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/js/function-main.min.js",
+        "assets/js/function_home.min.js",
+        "assets/js/insight.js",
+        "assets/js/jssor-slide.js",
+        "assets/js/slide-main.min.js",
+
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

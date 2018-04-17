@@ -13,6 +13,10 @@ export class TrainerComponent implements OnInit {
 
   constructor() { }
 
+  goToTrainer(){
+    
+  }
+
   ngOnInit() {
      $.getScript('../../../../assets/js/function_home.min.js');
      this.traineritems = ROUTES.filter(traineritems => traineritems);

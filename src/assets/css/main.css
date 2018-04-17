@@ -3236,7 +3236,7 @@ div.wpcf7 .ajax-loader{
 .whereWrapper .email_icon{
     width:23px;
     height:15px;
-    background-image:url(../../assets/img/vgStandAlone/23x15/099d6e/images/svg/email_icon.svg)
+    /*background-image:url(../../assets/img/vgStandAlone/23x15/099d6e/images/svg/email_icon.svg)*/
 }
 #ballon{
     font-size:.75rem;
@@ -4937,7 +4937,7 @@ div.wpcf7 .ajax-loader{
     width:100%;
     height:322px;
     z-index:10;
-    background-image:url(../../images/overlay.png)
+    /*background-image:url(../../images/overlay.png)*/
 }
 .peopleWrap__box.big:hover:before{
     opacity:1;
@@ -5052,7 +5052,7 @@ div.wpcf7 .ajax-loader{
         background-repeat:no-repeat;
         background-position:center;
         background-size:cover;
-        background-image:url(../../images/overlay.png);
+        /*background-image:url(../../images/overlay.png);*/
         background-color:transparent;
         transition:all .4s cubic-bezier(.23,1,.32,1);
         height:210px;

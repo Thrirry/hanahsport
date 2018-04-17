@@ -1,0 +1,78 @@
+<body class="home page-template page-template-page_HOME page-template-page_HOME-php page page-id-2 unknown">
+<app-nav></app-nav>
+<div id="barba-wrapper">
+    <div class="barba-container marketing_plan page" data-namespace="page_servizio" data-page-color="">
+        <div class="pageVisual ">
+            <div class="container no-padding">
+                <div class="col-sm-7 col-md-6 no-padding-left pageVisual__subWrapper">
+                    <h1 class="pageVisual__sub homeSection__sub" id="typed">
+                    <span class="sologan" typingAnimation [typeSpeed]="50" [condition]="start" [startDelay]="1000" [hideCursorOnComplete]="true">
+                        {{stringSologan1}}
+                    </span><br />
+                    <span class="sologan" typingAnimation [typeSpeed]="50" [condition]="start" [startDelay]="1000" [hideCursorOnComplete]="true">
+                        {{stringSologan2}}
+                    </span>
+                    </h1>
+                </div>
+                <div class="col-sm-5 col-md-6 pageVisual__imageWrapper no-padding-right">
+                    <img class="pageVisual__image lazy center-block" src="assets/img/courses.svg" style="width: 150%">
+                </div>
+            </div>
+        </div>
+
+<div class="details-courses-main">
+    <mat-card>
+    <mat-card-content>
+    <mat-tab-group class="demo-tab-group">
+
+    <mat-tab label="Progress">
+    <br />
+    <br />
+    <div class="demo-tab-content">
+            <mat-accordion>
+
+              <mat-expansion-panel *ngFor= "let coursess of coursess" routerLinkActive="active">
+                <mat-expansion-panel-header>
+                  <mat-panel-title ng-style="padding-top: 10px;">
+                    {{coursess.levels}} 
+                  </mat-panel-title>
+                   <mat-panel-description>
+                    {{coursess.title}}
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                    <div class="decsription-child">
+                         <p>I'm visible because I am open</p>
+                    </div>
+              </mat-expansion-panel>
+
+            </mat-accordion>
+        </div>
+        </mat-tab>
+
+        <mat-tab label="OverView">
+        <br />
+        <br />
+        <div class="demo-tab-content">
+            In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+            feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+            orci enim rutrum enim, vel tempor sapien arcu a tellus.
+        </div>
+        </mat-tab>
+
+
+        </mat-tab-group>
+        </mat-card-content>
+        </mat-card>
+        <br />
+        <br />
+        <div class="wrapper">
+        </div>
+        <a>{{curPath}}</a>
+        <br />
+        <br />
+    </div>
+
+    </div>
+</div>
+<app-footer></app-footer>
+</body>
